@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+#table-img a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #f8f9fa;
+}
+div.border-img {
+    border: 1px solid #ccc;
+    
+}
+div.border-img:hover {
+    border: 1px solid red; 
+}
+div.border-img img {
+    width: 100%;
+    height: auto;
+}
+h5.img-content {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.responsive {
+    padding: 0.8rem;
+    float: left;
+    width: 33%;
+  }
+
+@media screen and (max-width: 991px) {
+    .responsive {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .responsive {
+        width: 100%;
+    }
+    div.clearfix {
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+}
